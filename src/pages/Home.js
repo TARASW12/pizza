@@ -3,9 +3,8 @@ import Sort from "../components/Sort";
 import Skeleton from "../components/PizzaBlock/Skeleton";
 import PizzaBlock from "../components/PizzaBlock";
 import React, { useEffect, useState } from "react";
-import { useContextPizzaValue } from "../context";
 import { useSelector, useDispatch } from "react-redux";
-import { setCategory, setCurrentPage } from "../store/FilterSlice";
+import { setCurrentPage } from "../store/FilterSlice";
 import Pagination from "../Pagination";
 import axios from "axios";
 export const Home = () => {

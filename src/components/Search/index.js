@@ -1,28 +1,12 @@
 import style from "./Search.module.scss";
-import { useContextPizzaValue } from "../../context";
 import { useDispatch, useSelector } from "react-redux";
 import { setSearchValue } from "../../store/SearchValueSlice";
 import { useCallback, useRef, useState } from "react";
 import debounce from "lodash.debounce";
 const Search = () => {
-  // const { findValue, setFindValue } = useContextPizzaValue();
   const searchInputRef = useRef();
   const [value, setValue] = useState("");
-  const searchValue = useSelector((state) => state.search.searchValue);
-  // function debounce(func, timeout = 4000) {
-  //   let timer;
-  //   return (...arg) => {
-  //     const timer = setTimeout(() => {
-  //       func.apply(this, arg);
-  //     }, timeout);
-  //     clearTimeout(timer);
-  //   };
-  // }
 
-  const fetch = () => {
-    console.log(1);
-  };
-  // const userTyping = debounce(() => fetch());
   const userTyping = useCallback(
     debounce((e) => dispatch(setSearchValue(e.target.value)), 300),
     []

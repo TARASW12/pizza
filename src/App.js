@@ -5,12 +5,10 @@ import { Home } from "./pages/Home";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import {
-  BrowserRouter,
   createBrowserRouter,
   createRoutesFromElements,
   Outlet,
   Route,
-  Router,
   RouterProvider,
 } from "react-router-dom";
 

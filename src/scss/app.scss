@@ -14,7 +14,7 @@ body {
   margin: 50px auto;
   border-radius: 10px;
   max-width: 1400px;
-  
+
   @media (max-width: 645px) {
     width: calc(100vw - 30px);
     margin-top: 15px;
@@ -29,7 +29,6 @@ body {
     font-size: 38px;
     margin-top: 60px;
     margin-bottom: 50px;
-
   }
 
   &__items {
@@ -38,13 +37,13 @@ body {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 11px;
 
-    @media (max-width:1400px){
+    @media (max-width: 1400px) {
       grid-template-columns: repeat(3, 1fr);
     }
-    @media (max-width:1060px){
+    @media (max-width: 1060px) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @media (max-width:730px){
+    @media (max-width: 730px) {
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -54,37 +53,37 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width:1260px){
-
-      .categories{
-        width:100%;
+    @media (max-width: 1260px) {
+      .categories {
+        width: 100%;
         overflow: scroll;
-        ul{
+        ul {
           width: 700px;
         }
       }
-      .sort{
+      .sort {
         margin-left: 20px;
-b{display: none}
+        b {
+          display: none;
+        }
       }
     }
-    @media (max-width:820px){
-      .categories{
+    @media (max-width: 820px) {
+      .categories {
         margin-top: 25px;
       }
-      flex-direction:column-reverse;
+      flex-direction: column-reverse;
     }
 
-    @media (max-width:600px){
-      .categories{
-       ul{
-         width: 500px;
-         li{
-           padding: 8px 20px;
-         }
-       }
+    @media (max-width: 600px) {
+      .categories {
+        ul {
+          width: 500px;
+          li {
+            padding: 8px 20px;
+          }
+        }
       }
-
     }
   }
 }
@@ -110,7 +109,7 @@ b{display: none}
     align-items: center;
   }
 
-  .content__items{
+  .content__items {
     display: block;
   }
   .content__title {
@@ -301,7 +300,6 @@ b{display: none}
 
         span {
           color: darken($color: $gray-line, $amount: 20);
-          font-weight: 500;
           font-weight: 600;
         }
 
@@ -369,5 +367,4 @@ b{display: none}
       font-size: 18px;
     }
   }
-
 }

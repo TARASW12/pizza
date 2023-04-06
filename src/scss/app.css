@@ -70,7 +70,7 @@ a {
 .header__logo h1 {
   color: #181818;
   font-size: 24px;
-  letter-spacing: 1%;
+  letter-spacing: "1%";
   text-transform: uppercase;
   font-weight: 800;
 }
@@ -256,11 +256,11 @@ a {
   right: 0;
   margin-top: 15px;
   background: #ffffff;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
   border-radius: 10px;
   overflow: hidden;
   padding: 10px 0;
-  /*width: 160px;*/
+  width: 160px;
 }
 .sort__popup ul {
   overflow: hidden;
@@ -292,7 +292,7 @@ a {
 .pizza-block__title {
   font-size: 20px;
   font-weight: 900;
-  letter-spacing: 1%;
+  letter-spacing: "1%";
   margin-bottom: 20px;
 }
 .pizza-block__selector {
@@ -602,7 +602,6 @@ body {
 }
 .cart__bottom-buttons .go-back-btn span {
   color: #c3c3c3;
-  font-weight: 500;
   font-weight: 600;
 }
 .cart__bottom-buttons .go-back-btn:hover {
