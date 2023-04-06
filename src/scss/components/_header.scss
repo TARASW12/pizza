@@ -1,18 +1,17 @@
-@import '../variables';
+@import "../variables";
 
 .header {
   border-bottom: 1px solid $gray-line;
   padding: 40px 0;
 
-
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media (max-width:645px){
-flex-direction: column;
+    @media (max-width: 645px) {
+      flex-direction: column;
 
-      .header__cart{
+      .header__cart {
         margin-top: 20px;
       }
     }
@@ -28,7 +27,6 @@ flex-direction: column;
     h1 {
       color: #181818;
       font-size: 24px;
-      letter-spacing: '1%';
       text-transform: uppercase;
       font-weight: 800;
     }
