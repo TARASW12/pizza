@@ -1,0 +1,38 @@
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 20px 8px 40px;
+  width: 400px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+.input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+.wrapper {
+  position: relative;
+  width: auto;
+}
+
+.iconClear {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+  position: absolute;
+  right: 10px;
+  top: 9px;
+}
+.iconClear:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Search.module.css.map */
